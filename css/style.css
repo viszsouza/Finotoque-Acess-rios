@@ -1,0 +1,141 @@
+@import url("base.css");
+
+header{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.filters input,
+.filters select {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+.filters input::placeholder{
+    color: var(--branco);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.product-card {
+    background: var(--verde);
+    color: var(--branco);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+.product-img img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card span {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.adicionar {
+    background: #926C15;
+    background: linear-gradient(-90deg, rgba(146, 108, 21, 1) 0%, rgba(255, 225, 105, 1) 100%);
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.adicionar:hover {
+    transform: scale(0.95);
+}
+
+.cart {
+    padding: 30px;
+}
+
+.cart ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.cart li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5b;
+}

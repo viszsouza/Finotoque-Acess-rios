@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Finotoque Acessórios | Semijoias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+        <nav class="nav">
+            <a href="#inicio" class="logo"><img src="img/logo.png" alt="Logo Finotoque Acessórios"></a>
+
+            <button class="hamburguer"></button>
+
+            <ul class="nav-list">
+                <li><a href="index.html" class="roxo page">Inicio</a></li>
+                <li><a href="cart.html" class="roxo">Carrinho</a></li>
+                <li><a class="roxo abrir-modal">Entrar em contato</a></li>
+            </ul>
+        </nav>
+
+<!-- FILTROS -->
+<section class="filters">
+    <input type="text" id="searchInput" placeholder="Buscar joia..." onkeyup="filterProducts()">
+
+    <select id="categoryFilter" onchange="filterProducts()">
+        <option value="">Categoria</option>
+        <option value="anel">Anéis</option>
+        <option value="colar">Colares</option>
+        <option value="brinco">Brincos</option>
+        <option value="pulseira">Pulseiras</option>
+        <option value="tiara">Tiara</option>
+    </select>
+
+    <select id="materialFilter" onchange="filterProducts()">
+        <option value="">Material</option>
+        <option value="ouro">Folheado a Ouro</option>
+        <option value="prata">Prata</option>
+        <option value="aco">Aço Inox</option>
+        <option value="plastico">Plástico</option>
+    </select>
+
+    <select id="priceFilter" onchange="filterProducts()">
+        <option value="">Preço</option>
+        <option value="0-100">Até R$100</option>
+        <option value="100-200">R$100 a R$200</option>
+        <option value="200+">Acima de R$200</option>
+    </select>
+</section>
+
+<!-- Header -->
+    <header class="header">
+        <img src="img/banner.jpg" alt="Banner Finotoque Acessórios">
+    </header>
+
+<!-- PRODUTOS -->
+<main class="products-grid">
+
+    <div class="product-card"
+        data-name="Tiara de Pompom"
+        data-category="tiara"
+        data-material="plastico"
+        data-price="24.90">
+
+        <div class="product-img"><img src="img/produtos/tiaradepompom.png" alt=""></div>
+        <h3>Tiara de Pompom</h3>
+        <p>Plástico</p>
+        <span>R$ 24,90</span>
+        <button class="adicionar" onclick="addToCart('Tiara de Pompom', 24.90)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Potinho de glitter"
+        data-category="tiara"
+        data-material="plastico"
+        data-price="12.50">
+
+        <div class="product-img"><img src="img/produtos/Potinhodeglitter .png" alt=""></div>
+        <h3>Potinho de glitter</h3>
+        <p>Plástico</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Potinho de glitter', 12.5)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Tiara Colorida"
+        data-category="tiara"
+        data-material="plastico"
+        data-price="10">
+
+        <div class="product-img"><img src="img/produtos/TiaraColorida.png" alt=""></div>
+        <h3>Tiara Colorida</h3>
+        <p>Plástico</p>
+        <span>R$ 10,00</span>
+        <button class="adicionar" onclick="addToCart('Tiara Colorida', 10)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Argola Girassol"
+        data-category="brinco"
+        data-material="aço"
+        data-price="8.9">
+
+        <div class="product-img"><img src="img/produtos/ArgolaGirassol.png" alt=""></div>
+        <h3>Argola Girassol</h3>
+        <p>Aço</p>
+        <span>R$ 8,90</span>
+        <button class="adicionar" onclick="addToCart('Argola Girassol', 8.9)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Elástico de Cabelo"
+        data-category="tiara"
+        data-material="plastico"
+        data-price="8.9">
+
+        <div class="product-img"><img src="img/produtos/ElasticoCabelo.png" alt=""></div>
+        <h3>Elástico de Cabelo</h3>
+        <p>Plástico</p>
+        <span>R$ 8,90</span>
+        <button class="adicionar" onclick="addToCart('Elástico de Cabelo', 8.9)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Argola Fios Colors"
+        data-category="brinco"
+        data-material="aço"
+        data-price="12.5">
+
+        <div class="product-img"><img src="img/produtos/ArgolaFilColors.png" alt=""></div>
+        <h3>Argola Fios Colors</h3>
+        <p>Aço</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Argola Fios Colors', 12.5)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Brinco Cascata de Paetê"
+        data-category="brinco"
+        data-material="aço"
+        data-price="12.5">
+
+        <div class="product-img"><img src="img/produtos/Brinco Cascata de paetê.png" alt=""></div>
+        <h3>Brinco Cascata de Paetê</h3>
+        <p>Aço</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Brinco Cascata de Paetê', 12.5)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Brinco Paetê"
+        data-category="brinco"
+        data-material="aço"
+        data-price="12.5">
+
+        <div class="product-img"><img src="img/produtos/Brinco paetê .png" alt=""></div>
+        <h3>Brinco Paetê</h3>
+        <p>Aço</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Brinco Paetê', 12.5)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Brinco Carnaval colorido "
+        data-category="brinco"
+        data-material="aço"
+        data-price="12.5">
+
+        <div class="product-img"><img src="img/produtos/Brinco Carnaval colorido .png" alt=""></div>
+        <h3>Brinco Carnaval colorido</h3>
+        <p>Aço</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Brinco Carnaval colorido ', 12.5)">Adicionar</button>
+    </div>
+
+    <div class="product-card"
+        data-name="Argola Fios de Carnaval"
+        data-category="brinco"
+        data-material="aço"
+        data-price="12.5">
+
+        <div class="product-img"><img src="img/produtos/argola fios de carnaval .png" alt=""></div>
+        <h3>Argola Fios de Carnaval</h3>
+        <p>Aço</p>
+        <span>R$ 12,50</span>
+        <button class="adicionar" onclick="addToCart('Argola Fios de Carnaval ', 12.5)">Adicionar</button>
+    </div>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
