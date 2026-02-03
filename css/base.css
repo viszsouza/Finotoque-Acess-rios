@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Variaveis */
 :root {
     --branco: #FFFFFF;
@@ -14,6 +16,7 @@
     box-sizing: border-box;
     text-decoration: none;
     background-color: transparent;
+    font-family: "Montserrat", sans-serif;
 }
 
 html {
