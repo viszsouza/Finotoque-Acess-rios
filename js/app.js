@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5599999999999"; // <-- TROQUE AQUI
+const WHATSAPP_NUMBER = "5581987449319"; // <-- TROQUE AQUI
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
